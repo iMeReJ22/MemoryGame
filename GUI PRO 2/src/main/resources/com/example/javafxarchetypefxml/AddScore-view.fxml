@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="232.0" prefWidth="303.0" style="-fx-background-color: #141414;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxarchetypefxml.AddScoreController">
+   <children>
+      <VBox alignment="CENTER" layoutX="3.0" prefHeight="252.0" prefWidth="300.0">
+         <children>
+            <Label alignment="CENTER" text="Want to be remembered? " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <HBox prefHeight="30.0" prefWidth="269.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="29.0" prefWidth="72.0" text="Nickname: " textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <TextField fx:id="nicknameField" prefHeight="27.0" prefWidth="212.0" promptText="TheLegend27" style="-fx-text-fill: white; -fx-background-color: #171717; -fx-border-color: black;" />
+               </children></HBox>
+            <Label fx:id="nicknameErrorLabel" alignment="CENTER" prefHeight="17.0" prefWidth="276.0" text="ADD A NICKNAME" textFill="RED" visible="false" />
+            <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Total points:" textFill="WHITE" />
+                  <Label fx:id="pointsLabel" prefHeight="30.0" prefWidth="100.0" text="13000" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Pairs to guess:" textFill="WHITE" />
+                  <Label fx:id="pairsLabel" prefHeight="30.0" prefWidth="100.0" text="12" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Your time:" textFill="WHITE" />
+                  <Label fx:id="timeLabel" prefHeight="30.0" prefWidth="100.0" text="00:01:30" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Total guesses:" textFill="WHITE" />
+                  <Label fx:id="guessesLabel" prefHeight="30.0" prefWidth="100.0" text="20" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="First try guesses:" textFill="WHITE" />
+                  <Label fx:id="fGuessesLabel" prefHeight="30.0" prefWidth="100.0" text="3" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="noButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#close" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #141414; -fx-border-color: black;" text="NO" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="yesButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#yes" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #141414; -fx-border-color: black;" text="YES" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #141414;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxarchetypefxml.MenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="17.0" layoutY="15.0" prefHeight="371.0" prefWidth="566.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="57.0" prefWidth="238.0" text="Memory The Game">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="29.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.26111111111111107" centerY="0.4904761904761905" focusAngle="178.15" focusDistance="0.5348837209302326" radius="0.9186046511627907">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.0784313753247261" green="0.0784313753247261" blue="0.0784313753247261" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" prefHeight="46.0" prefWidth="107.0" text="S24914">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.6523809523809524" startX="1.0" startY="0.5523809523809524">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0833333358168602" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.1111111119389534" blue="0.1111111119389534" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Comic Sans MS" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="newGameButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#newGame" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #171717; -fx-border-color: black;" text="New Game" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="scoreButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#scoreBoard" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #171717; -fx-border-color: black;" text="High Scores" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #171717; -fx-border-color: black;" text="Exit" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

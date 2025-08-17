@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="599.0" style="-fx-background-color: #141414;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxarchetypefxml.NewGameController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="122.0" layoutY="100.0" prefHeight="200.0" prefWidth="355.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="88.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="198.0" text="Select Vertical Size" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Spinner fx:id="verticalSpinner" prefHeight="25.0" prefWidth="107.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Spinner>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="88.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="198.0" text="Select Horizontal Size" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Spinner fx:id="horizontalSpinner" prefHeight="25.0" prefWidth="107.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Spinner>
+               </children>
+            </HBox>
+            <Label fx:id="evenLable" alignment="CENTER" prefHeight="17.0" prefWidth="373.0" text="Can start the game, number of cards is even." textFill="GREEN">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font></Label>
+            <Button fx:id="startGameButton" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #171717; -fx-border-color: black;" text="PLAY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #171717; -fx-border-color: black;" text="BACK" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
